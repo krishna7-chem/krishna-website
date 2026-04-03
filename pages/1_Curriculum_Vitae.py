@@ -71,7 +71,7 @@ with st.expander("Science Teacher | Sunghava English Boarding School"):
 # --- PROJECT WORK ---
 st.markdown('<p class="section-header">🚀 Project Work</p>', unsafe_allow_html=True)
 
-with st.expander("Industrial Master's Project | Supervised by Framatome"):
+with st.expander("🏭 Industrial Master's Project | Supervised by Framatome"):
     st.write("**10/2025 - Present | France**") # [cite: 105, 111]
     st.write("Studying flow properties of metal powders and simulation for nuclear reactor fuel.") # [cite: 112]
 
