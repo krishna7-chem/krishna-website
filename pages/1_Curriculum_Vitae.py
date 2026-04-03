@@ -93,7 +93,7 @@ with st.expander("🌱 Startup Spirulina | KOICA Funded"):
 
 # --- PUBLICATION & WORKSHOPS ---
 with st.expander("📄 Publication: Streptomyces sp. G-18 Research"):
-    st.markdown("### Antioxidant & Enzyme Inhibitory Potential")
+    st.markdown("### Change & Enzyme Inhibitory Potential")
     st.write("**DOI:** [10.1155/2023/6439466](https://doi.org/10.1155/2023/6439466)")
     
     st.write("""
