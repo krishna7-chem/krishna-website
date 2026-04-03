@@ -76,10 +76,20 @@ with st.expander("Industrial Master's Project | Supervised by Framatome"):
     st.write("Studying flow properties of metal powders and simulation for nuclear reactor fuel.") # [cite: 112]
 
 with st.expander("🌱 Startup Spirulina | KOICA Funded"):
-    st.write("**01/2023 - 10/2023**") # [cite: 106, 113]
-    st.write("Production of micro-algae in flat panel photo bioreactor and biomass processing.") # [cite: 114]
-    # Place for your YouTube video
-    st.video("https://www.youtube.com/embed/tAqX5RSIWTk")
+    col1, col2 = st.columns([1, 1])
+    
+    with col1:
+        st.write("### Project Overview")
+        st.write("""
+        * **Optimization:** Localized spirulina media for the Nepal climate.
+        * **Innovation:** Developed Spirulina-infused cookies and pasta.
+        * **Research:** Focused on extracting **Phycocyanin** (natural blue antioxidant).
+        * **Funding:** Successfully secured seed funding from **KOICA**.
+        """)
+        
+    with col2:
+        # Video placed on the right side for a modern CV look
+        st.video("https://www.youtube.com/watch?v=tAqX5RSIWTk")
 
 # --- PUBLICATION & WORKSHOPS ---
 st.markdown('<p class="section-header">📑 Publication & Workshops</p>', unsafe_allow_html=True)
