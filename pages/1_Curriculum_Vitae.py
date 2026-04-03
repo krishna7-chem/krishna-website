@@ -92,8 +92,23 @@ with st.expander("🌱 Startup Spirulina | KOICA Funded"):
         st.video("https://www.youtube.com/watch?v=tAqX5RSIWTk")
 
 # --- PUBLICATION & WORKSHOPS ---
-st.markdown('<p class="section-header">📑 Publication & Workshops</p>', unsafe_allow_html=True)
-st.write("**Publication:** Antioxidant and Enzyme Inhibitory Potential of Streptomyces sp. G-18 Grown in Various Media. DOI: [10.1155/2023/6439466](https://doi.org/10.1155/2023/6439466)") # [cite: 115]
+with st.expander("📄 Publication: Streptomyces sp. G-18 Research"):
+    st.markdown("### Antioxidant & Enzyme Inhibitory Potential")
+    st.write("**DOI:** [10.1155/2023/6439466](https://doi.org/10.1155/2023/6439466)")
+    
+    st.write("""
+    - **Focus:** Growth media optimization for *Streptomyces sp. G-18*.
+    - **Impact:** Demonstrated high antioxidant and enzyme inhibitory potential.
+    """)
+
+    # Simple download button (ensure 'publication.pdf' is in your GitHub folder)
+    with open("publication.pdf", "rb") as pdf_file:
+        st.download_button(
+            label="📥 Download Full Paper",
+            data=pdf_file,
+            file_name="Streptomyces_G18_Research.pdf",
+            mime="application/pdf"
+        )
 st.write("**Workshop (04/2025):** Algae Biotechnology, Fraunhofer Institute IGB, Germany.") # [cite: 117, 122]
 st.write("**Workshop (06/2025):** Training in Algae Related Industrial Processes, University of Almeria.") # [cite: 118, 123]
 
