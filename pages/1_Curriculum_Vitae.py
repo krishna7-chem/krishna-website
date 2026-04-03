@@ -100,15 +100,21 @@ with st.expander("📄 Publication: Streptomyces sp. G-18 Research"):
     - **Focus:** Growth media optimization for *Streptomyces sp. G-18*.
     - **Impact:** Demonstrated high antioxidant and enzyme inhibitory potential.
     """)
+import os
+# 1. Get the folder where this specific script (1_Curriculum_Vitae.py) lives
+current_dir = os.path.dirname(__file__)
+# 2. Join that folder path with your PDF name
+pdf_path = os.path.join(current_dir, "publication.pdf")
 
-    # Simple download button (ensure 'publication.pdf' is in your GitHub folder)
-    with open("publication.pdf", "rb") as pdf_file:
-        st.download_button(
-            label="📥 Download Full Paper",
-            data=pdf_file,
-            file_name="Streptomyces_G18_Research.pdf",
-            mime="application/pdf"
-        )
+# 3. Open it using the full path
+with open(pdf_path, "rb") as pdf_file:
+    st.download_button(
+        label="📥 Download Full Research Paper (PDF)",
+        data=pdf_file,
+        file_name="Streptomyces_G18_Research.pdf",
+        mime="application/pdf"
+    )
+    
 st.write("**Workshop (04/2025):** Algae Biotechnology, Fraunhofer Institute IGB, Germany.") # [cite: 117, 122]
 st.write("**Workshop (06/2025):** Training in Algae Related Industrial Processes, University of Almeria.") # [cite: 118, 123]
 
