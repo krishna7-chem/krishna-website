@@ -98,7 +98,7 @@ with st.expander("📄 Publication: Streptomyces sp. G-18 Research"):
     st.write("**DOI:** [10.1155/2023/6439466](https://doi.org/10.1155/2023/6439466)")
     
     st.write("""
-    - **Focus:**investigate the infuence of diferent growth media on biomassproduction and the antioxidant and enzyme inhibitory potential of a crude extract obtained from Streptomyces sp. G-18 isolatedfrom high altitudinal soil of Nepal.  *.
+    - **Focus:** Investigate the infuence of diferent growth media on biomassproduction and the antioxidant and enzyme inhibitory potential of a crude extract obtained from Streptomyces sp. G-18 isolatedfrom high altitudinal soil of Nepal.  *.
     - **Impact:** Demonstrated high antioxidant and enzyme inhibitory potential.
     """)
 
