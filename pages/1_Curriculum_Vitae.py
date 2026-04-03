@@ -79,7 +79,7 @@ with st.expander("🌱 Startup Spirulina | KOICA Funded"):
     st.write("**01/2023 - 10/2023**") # [cite: 106, 113]
     st.write("Production of micro-algae in flat panel photo bioreactor and biomass processing.") # [cite: 114]
     # Place for your YouTube video
-    st.video("https://www.youtube.com/watch?v=tAqX5RSIWTk")
+    st.video("https://www.youtube.com/embed/tAqX5RSIWTk")
 
 # --- PUBLICATION & WORKSHOPS ---
 st.markdown('<p class="section-header">📑 Publication & Workshops</p>', unsafe_allow_html=True)
