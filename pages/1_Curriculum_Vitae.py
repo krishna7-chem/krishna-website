@@ -92,28 +92,30 @@ with st.expander("🌱 Startup Spirulina | KOICA Funded"):
         st.video("https://www.youtube.com/watch?v=tAqX5RSIWTk")
 
 # --- PUBLICATION & WORKSHOPS ---
+import os
 with st.expander("📄 Publication: Streptomyces sp. G-18 Research"):
     st.markdown("### Change & Enzyme Inhibitory Potential")
     st.write("**DOI:** [10.1155/2023/6439466](https://doi.org/10.1155/2023/6439466)")
     
     st.write("""
-    - **Focus:** Growth media optimization for *Streptomyces sp. G-18*.
+    - **Focus:**nd gene regulation. Tis study aimed to investigate the infuence of diferent growth media on biomassproduction and the antioxidant and enzyme inhibitory potential of a crude extract obtained from Streptomyces sp. G-18 isolatedfrom high altitudinal soil of Nepal. *.
     - **Impact:** Demonstrated high antioxidant and enzyme inhibitory potential.
     """)
-import os
-# 1. Get the folder where this specific script (1_Curriculum_Vitae.py) lives
-current_dir = os.path.dirname(__file__)
-# 2. Join that folder path with your PDF name
-pdf_path = os.path.join(current_dir, "publication.pdf")
 
-# 3. Open it using the full path
-with open(pdf_path, "rb") as pdf_file:
-    st.download_button(
-        label="📥 Download Full Research Paper (PDF)",
-        data=pdf_file,
-        file_name="Streptomyces_G18_Research.pdf",
-        mime="application/pdf"
-    )
+    # --- MOVING THE BUTTON INSIDE THE EXPANDER ---
+    current_dir = os.path.dirname(__file__)
+    pdf_path = os.path.join(current_dir, "publication.pdf")
+
+    if os.path.exists(pdf_path):
+        with open(pdf_path, "rb") as pdf_file:
+            st.download_button(
+                label="📥 Download Full Research Paper (PDF)",
+                data=pdf_file,
+                file_name="Streptomyces_G18_Research.pdf",
+                mime="application/pdf"
+            )
+    else:
+        st.info("Download will be available once the PDF is linked.")
     
 st.write("**Workshop (04/2025):** Algae Biotechnology, Fraunhofer Institute IGB, Germany.") # [cite: 117, 122]
 st.write("**Workshop (06/2025):** Training in Algae Related Industrial Processes, University of Almeria.") # [cite: 118, 123]
