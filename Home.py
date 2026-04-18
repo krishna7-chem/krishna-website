@@ -107,7 +107,7 @@ st.markdown('<div class="main-block">', unsafe_allow_html=True)
 st.title("About Me")
 st.write("""
 I am a **Chemical Engineer** and **Erasmus Mundus Scholar** currently based in **Turin, Italy**. 
-My expertise includes process design, techno economic anaysis of industrial process, modeling of physical and chemical process.
+My knowledge, experience and interest mianly includes bioprocess, particle technology and computational fluid dynamics. My bachelor thesis involved the techno economic analysis of paracetamol manufactureing in Nepal and my work in the project spirulina gave me an idea of not only research and design but its application, product development, its presentation, human perception and management. 
 """)
 
 # Action Buttons
