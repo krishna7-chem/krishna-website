@@ -114,7 +114,7 @@ My expertise includes process design, techno economic anaysis of industrial proc
 col1, col2, col3 = st.columns(3)
 with col1:
     if st.button("📖 Read More (Full CV)"):
-        st.switch_page("pages/1_CURRICULUM_VITAE.py")
+        st.switch_page("pages/1_Curriculum_Vitae.py")
 with col2:
     if os.path.exists("CV.pdf"):
         with open("CV.pdf", "rb") as f:
