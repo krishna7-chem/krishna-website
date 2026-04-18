@@ -122,7 +122,7 @@ with col2:
 with col3:
     # This button opens your separate contact page
     if st.button("📩 Contact Me"):
-        st.switch_page("pages/4_CONTACT.py")
+        st.switch_page("pages/4_Contact.py")
 
 st.markdown('</div>', unsafe_allow_html=True)
 
