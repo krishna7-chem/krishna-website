@@ -10,3 +10,13 @@ with st.expander("⚡ Nuclear Fuel Manufacturing (Current Project)", expanded=Tr
 # Pillar: Spirulina
 with st.expander("🌱 Biotech Entrepreneurship"):
     st.write("Co-founded a research startup for Spirulina production in Nepal...")
+
+# Pillar: Bioethanol from Lignocellulosic material
+with st.expander("🌱 Semester Project"):
+    st.write("Co-founded a research startup for Spirulina production in Nepal...")
+
+# Pillar: Streptomycis
+with st.expander("🌱 Semester Project"):
+    st.write("Co-founded a research startup for Spirulina production in Nepal...")
+
+
