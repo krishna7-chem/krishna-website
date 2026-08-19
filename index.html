@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Kumar Karki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="brand">
+            <img src="profile_1 (1).jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'" alt="Krishna">
+            <h1>KRISHNA KUMAR KARKI</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="view-cv.html">PDF CV</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="slider-container">
+            <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+            <img id="slider-img" src="profile_1 (1).jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800'" alt="Profile Photo">
+            <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <h1 style="color: var(--navy);">About Me</h1>
+        <p style="font-size: 1.1rem;">
+            I am a <strong>Chemical Engineer</strong> and <strong>Erasmus Mundus Scholar</strong> currently based in <strong>Turin, Italy</strong>. 
+            My knowledge, experience, and interest mainly include bioprocess, particle technology, and computational fluid dynamics. 
+            My bachelor thesis involved the techno-economic analysis of paracetamol manufacturing in Nepal, and my work in Project Spirulina gave me an idea of not only research and design, but its application, product development, presentation, human perception, and management.
+        </p>
+
+        <div class="btn-group">
+            <a href="cv.html" class="btn">📖 Read More (Full CV)</a>
+            <a href="CV.pdf" download class="btn" style="background-color: var(--navy);">📥 Download CV (PDF)</a>
+            <a href="contact.html" class="btn">📩 Contact Me</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>© 2026 Krishna Kumar Karki</span>
+        <a href="https://www.linkedin.com/in/krishna-kumar-karki/" target="_blank">
+            <span class="footer-icon in-bg">in</span> LinkedIn
+        </a>
+        <a href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers" target="_blank">
+            <span class="footer-icon q-bg">Q</span> Quora
+        </a>
+    </div>
+
+    <script>
+        const images = [
+            "profile_1 (1).jpg", "profile_1 (2).jpg", "profile_1 (3).jpg"
+        ];
+        let currentIndex = 0;
+
+        function changeSlide(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            document.getElementById("slider-img").src = images[currentIndex];
+        }
+    </script>
+</body>
+</html>
