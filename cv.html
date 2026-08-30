@@ -1,187 +1,267 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae | Krishna Karki</title>
+
+    <title>Curriculum Vitae | Krishna Kumar Karki</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- =========================
+         TOP BAR / NAVIGATION
+    ========================== -->
+
     <div class="top-bar">
+
         <div class="brand">
+
             <img src="profile_1 (1).jpg"
                  onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'"
-                 alt="Krishna">
+                 alt="Krishna Kumar Karki">
+
             <h1>KRISHNA KUMAR KARKI</h1>
+
         </div>
 
+
         <nav>
+
             <a href="index.html">Home</a>
+
             <a href="cv.html" class="active">CV</a>
+
             <a href="portfolio.html">Portfolio</a>
+
             <a href="view-cv.html">PDF CV</a>
+
             <a href="contact.html">Contact</a>
+
         </nav>
+
     </div>
 
 
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
     <div class="container">
+
+
+        <!-- PAGE TITLE -->
 
         <h1 style="color: var(--navy); margin-bottom: 5px;">
             📄 Full Curriculum Vitae
         </h1>
 
         <p style="color: #666; margin-top: 0;">
-            Last Updated: August 28, 2026
+            Last Updated: August 30, 2026
         </p>
 
 
-        <!-- PERSONAL INFORMATION -->
 
-        <p class="section-header">👤 Personal Information</p>
+        <!-- =========================
+             PERSONAL INFORMATION
+        ========================== -->
 
-        <div style="background: white; padding: 15px; border-radius: 6px; border: 1px solid var(--border);">
+        <p class="section-header">
+            👤 Personal Information
+        </p>
+
+
+        <div style="
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        ">
 
             <p>
-                <strong>Name:</strong> Krishna Kumar Karki
+                <strong>Name:</strong>
+                Krishna Kumar Karki
             </p>
 
+
             <p>
-                <strong>Date of Birth:</strong> 20/12/1998
+                <strong>Date of Birth:</strong>
+                20/12/1998
             </p>
+
 
             <p>
                 <strong>Address:</strong>
                 Via Bernardino Galliari 30, 10125 Turin, Italy
             </p>
 
+
             <p>
-                <strong>Phone:</strong> +4915755659606 |
-                <strong>Email:</strong> karki.kris1998@gmail.com
+                <strong>Phone:</strong>
+                +4915755659606
+                |
+                <strong>Email:</strong>
+                karki.kris1998@gmail.com
             </p>
+
 
             <p>
                 <strong>LinkedIn:</strong>
+
                 <a href="https://www.linkedin.com/in/krishna-kumar-karki/"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     linkedin.com/in/krishna-kumar-karki/
+
                 </a>
+
             </p>
 
         </div>
 
 
-        <!-- EDUCATION -->
 
-        <p class="section-header">🎓 Education</p>
+        <!-- =========================
+             EDUCATION
+        ========================== -->
+
+        <p class="section-header">
+            🎓 Education
+        </p>
 
 
-        <!-- TUM -->
+
+        <!-- ERASMUS MUNDUS -->
 
         <details open>
 
             <summary>
-                Master’s in Materials Science and Engineering |
-                Technical University of Munich (TUM)
+                Erasmus Mundus Joint Master in Multiphase Science
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>04/2026 - Present | Munich, Germany</strong>
+                    <strong>
+                        09/2025 – Present
+                    </strong>
                 </p>
 
+
                 <p>
-                    Master’s studies in Materials Science and Engineering,
-                    focusing on advanced materials, materials processing,
-                    characterization, and engineering applications.
+
+                    <span
+                        class="badge"
+                        style="
+                            background: #e6f4ea;
+                            color: #137333;
+                            font-weight: 600;
+                            padding: 3px 8px;
+                            border-radius: 4px;
+                        ">
+
+                        Awarded Full Erasmus Mundus Scholarship
+
+                    </span>
+
                 </p>
+
+
+                <p>
+
+                    Joint European Master's programme specializing in
+                    <strong>
+                        multiphase systems, powder science and technology,
+                        fluid dynamics, materials processing, and computational engineering
+                    </strong>,
+                    with academic mobility across leading European institutions.
+
+                </p>
+
+
+                <h3 style="color: var(--navy); margin-bottom: 8px;">
+                    Academic Mobility
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        <strong>1st Semester:</strong>
+                        École des Mines de Saint-Étienne, France
+                    </li>
+
+
+                    <li>
+                        <strong>2nd Semester:</strong>
+                        Politecnico di Torino, Italy
+                    </li>
+
+
+                    <li>
+                        <strong>3rd Semester:</strong>
+                        Technical University of Munich (TUM), Germany
+                    </li>
+
+
+                    <li>
+                        <strong>4th Semester:</strong>
+                        Master's Thesis / Final Semester
+                    </li>
+
+                </ul>
 
             </div>
 
         </details>
 
-
-        <!-- POLITECNICO -->
-
-        <details open>
-
-            <summary>
-                Master’s in Multiphase Science |
-                Politecnico di Torino
-            </summary>
-
-            <div class="details-content">
-
-                <p>
-                    <strong>09/2025 - Present | Turin, Italy</strong>
-                </p>
-
-                <p>
-                    Advanced studies in multiphase science, powder technology,
-                    fluid mechanics, and computational engineering.
-                </p>
-
-            </div>
-
-        </details>
-
-
-        <!-- ECOLE DES MINES -->
-
-        <details open>
-
-            <summary>
-                Master’s in Multiphase Science |
-                École des Mines de Saint-Étienne
-            </summary>
-
-            <div class="details-content">
-
-                <p>
-                    <strong>09/2025 - Present | Saint-Étienne, France</strong>
-                </p>
-
-                <p>
-                    Advanced studies in multiphase science and powder technology
-                    as part of the Erasmus Mundus program.
-                </p>
-
-            </div>
-
-        </details>
 
 
         <!-- FH MUNSTER -->
 
-        <details>
+        <details open>
 
             <summary>
                 Master's in Chemical Engineering |
                 FH Münster
             </summary>
 
+
             <div class="details-content">
 
                 <p>
-                    <strong>11/2023 - 09/2025 | Münster, Germany</strong>
+                    <strong>
+                        11/2023 – 09/2025 | Münster, Germany
+                    </strong>
                 </p>
 
-                <p>
-                    Graduate studies in Chemical Engineering with coursework
-                    in process engineering, simulation, transport phenomena,
-                    and related engineering disciplines.
-                </p>
 
                 <p>
-                    Completed all core graduate-level coursework.
+
+                    Graduate studies in Chemical Engineering with
+                    coursework in process engineering, simulation,
+                    transport phenomena, and related engineering disciplines.
+
+                </p>
+
+
+                <p>
+
+                    Completed the Master's coursework as part of the
+                    Chemical Engineering programme.
+
                 </p>
 
             </div>
 
         </details>
+
 
 
         <!-- KATHMANDU UNIVERSITY -->
@@ -189,26 +269,37 @@
         <details>
 
             <summary>
-                BE Chemical Engineering |
+                B.E. Chemical Engineering |
                 Kathmandu University
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>07/2018 - 05/2023 | Dhulikhel, Nepal</strong>
+                    <strong>
+                        07/2018 – 05/2023 | Dhulikhel, Nepal
+                    </strong>
                 </p>
 
+
                 <p>
+
                     <strong>Thesis:</strong>
-                    Plant Design for Production of Acetaminophen from Nitrobenzene.
+
+                    Plant Design for Production of Acetaminophen
+                    from Nitrobenzene.
+
                 </p>
 
+
                 <p>
+
                     The thesis included Process Flow Diagram (PFD),
                     Piping and Instrumentation Diagram (P&ID),
                     equipment design, economic analysis, safety,
                     and hazard assessment.
+
                 </p>
 
             </div>
@@ -216,26 +307,46 @@
         </details>
 
 
-        <!-- WORK EXPERIENCE -->
 
-        <p class="section-header">💼 Work Experience</p>
+        <!-- =========================
+             WORK EXPERIENCE
+        ========================== -->
 
+        <p class="section-header">
+            💼 Work Experience
+        </p>
+
+
+
+        <!-- STUDENT RESEARCH ASSISTANT -->
 
         <details>
 
             <summary>
+
                 Student Research Assistant |
                 Münster University of Applied Sciences
+
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>12/2024 - 02/2025 | Germany</strong>
+                    <strong>
+                        12/2024 – 02/2025 | Germany
+                    </strong>
                 </p>
 
+
                 <p>
-                    Microalgae and fluid mechanics experimental setup.
+
+                    Worked on experimental research involving
+                    <strong>
+                        microalgae cultivation and fluid mechanics
+                    </strong>,
+                    including experimental setup and laboratory work.
+
                 </p>
 
             </div>
@@ -243,111 +354,189 @@
         </details>
 
 
+
+        <!-- SUCCEDO -->
+
         <details>
 
             <summary>
+
                 Working Student |
                 Succedo Unternehmensberatung GmbH
+
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>04/2024 - 06/2024 | Germany</strong>
+                    <strong>
+                        04/2024 – 06/2024 | Germany
+                    </strong>
                 </p>
 
+
                 <p>
-                    Calculated yearly energy consumption for German companies
-                    and organized logs.
+
+                    Calculated yearly energy consumption for German
+                    companies and organized energy-related data and logs.
+
                 </p>
 
             </div>
 
         </details>
 
+
+
+        <!-- NATIONAL INNOVATION CENTRE -->
 
         <details>
 
             <summary>
+
                 Research Assistant |
                 National Innovation Centre
+
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>12/2022 - 09/2023 | Kathmandu, Nepal</strong>
+                    <strong>
+                        12/2022 – 09/2023 | Kathmandu, Nepal
+                    </strong>
                 </p>
 
+
                 <p>
-                    Lab experiment and design for biogas plant reoperation;
-                    studied microalgae feasibility.
+
+                    Conducted laboratory experiments and engineering
+                    design work related to biogas plant reoperation
+                    and investigated the feasibility of microalgae
+                    cultivation.
+
                 </p>
 
             </div>
 
         </details>
 
-        <!-- PUBLICATIONS -->
 
-        <p class="section-header">📚 Publications</p>
+
+        <!-- =========================
+             PUBLICATIONS
+        ========================== -->
+
+        <p class="section-header">
+            📚 Publications
+        </p>
+
 
         <details open>
 
             <summary>
+
                 Antioxidant and Enzyme Inhibitory Potential of
                 <em>Streptomyces</em> sp. G-18 Grown in Various Media
+
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>Published:</strong> 2023
+
+                    <strong>Published:</strong>
+                    2023
+
                 </p>
 
+
                 <p>
+
                     <strong>DOI:</strong>
+
                     <a href="https://doi.org/10.1155/2023/6439466"
-                       target="_blank">
+                       target="_blank"
+                       rel="noopener noreferrer">
+
                         10.1155/2023/6439466
+
                     </a>
+
                 </p>
 
+
                 <p>
+
                     This study investigated the antioxidant and enzyme
-                    inhibitory potential of bioactive compounds produced by
-                    <em>Streptomyces</em> sp. G-18 under different cultivation
-                    media. The research explored how growth conditions affect
+                    inhibitory potential of bioactive compounds produced
+                    by <em>Streptomyces</em> sp. G-18 under different
+                    cultivation media.
+
+                </p>
+
+
+                <p>
+
+                    The research explored how growth conditions affect
                     the production of bioactive metabolites with potential
                     pharmaceutical and biotechnological applications.
+
                 </p>
 
             </div>
 
         </details>
-        <!-- PROJECT WORK -->
-
-        <p class="section-header">🚀 Project Work</p>
 
 
-        <!-- FRAMATOME PROJECT -->
+
+        <!-- =========================
+             PROJECT WORK
+        ========================== -->
+
+        <p class="section-header">
+            🚀 Project Work
+        </p>
+
+
+
+        <!-- FRAMATOME -->
 
         <details open>
 
             <summary>
+
                 🏭 Industrial Master's Project |
                 Supervised by Framatome
+
             </summary>
+
 
             <div class="details-content">
 
                 <p>
-                    <strong>10/2025 - Present | France</strong>
+
+                    <strong>
+                        10/2025 – Present | France
+                    </strong>
+
                 </p>
 
+
                 <p>
-                    Studying flow properties of metal powders and simulation
-                    for nuclear reactor fuel.
+
+                    Studying the
+                    <strong>
+                        flow properties and segregation behavior
+                        of metal powders
+                    </strong>
+                    and applying computational simulations to
+                    powder transport and processing for nuclear
+                    reactor fuel applications.
+
                 </p>
 
             </div>
@@ -355,57 +544,109 @@
         </details>
 
 
-        <!-- SPIRULINA PROJECT -->
+
+        <!-- SPIRULINA -->
 
         <details open>
 
             <summary>
-                🌱 Startup Spirulina | KOICA Funded
+
+                🌱 Startup Spirulina |
+                Funded by Korea International Cooperation Agency (KOICA)
+
             </summary>
 
-            <div class="details-content"
-                 style="display: flex; gap: 20px; flex-wrap: wrap;">
 
-                <div style="flex: 1; min-width: 280px;">
+            <div class="details-content">
 
-                    <ul>
+                <p>
 
-                        <li>
-                            <strong>Optimization:</strong>
-                            Localized spirulina media for the Nepal climate.
-                        </li>
+                    <strong>
+                        01/2023 – 10/2023 | Kathmandu, Nepal
+                    </strong>
 
-                        <li>
-                            <strong>Innovation:</strong>
-                            Developed Spirulina-infused cookies and pasta.
-                        </li>
-
-                        <li>
-                            <strong>Research:</strong>
-                            Focused on extracting Phycocyanin
-                            (natural blue antioxidant).
-                        </li>
-
-                        <li>
-                            <strong>Funding:</strong>
-                            Successfully secured seed funding from KOICA.
-                        </li>
-
-                    </ul>
-
-                </div>
+                </p>
 
 
-                <div style="flex: 1; min-width: 280px;">
+                <div style="
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                ">
 
-                    <iframe
-                        width="100%"
-                        height="215"
-                        src="https://www.youtube.com/embed/tAqX5RSIWTk"
-                        frameborder="0"
-                        allowfullscreen
-                        style="border-radius:6px;">
-                    </iframe>
+
+                    <div style="
+                        flex: 1;
+                        min-width: 280px;
+                    ">
+
+                        <ul>
+
+                            <li>
+
+                                <strong>Optimization:</strong>
+
+                                Localized Spirulina cultivation media
+                                for the Nepalese climate.
+
+                            </li>
+
+
+                            <li>
+
+                                <strong>Product Development:</strong>
+
+                                Developed Spirulina-infused cookies
+                                and pasta.
+
+                            </li>
+
+
+                            <li>
+
+                                <strong>Research:</strong>
+
+                                Investigated extraction of
+                                Phycocyanin, a natural blue
+                                antioxidant pigment.
+
+                            </li>
+
+
+                            <li>
+
+                                <strong>Funding:</strong>
+
+                                Successfully secured seed funding
+                                from the Korea International
+                                Cooperation Agency (KOICA).
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div style="
+                        flex: 1;
+                        min-width: 280px;
+                    ">
+
+                        <iframe
+                            width="100%"
+                            height="215"
+                            src="https://www.youtube.com/embed/tAqX5RSIWTk"
+                            title="Spirulina Project"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            style="border-radius: 6px;">
+
+                        </iframe>
+
+                    </div>
 
                 </div>
 
@@ -414,32 +655,406 @@
         </details>
 
 
-        <!-- SKILLS -->
 
-        <p class="section-header">🛠️ Skills & Online Courses</p>
+        <!-- =========================
+             PROFESSIONAL LICENSE
+        ========================== -->
 
-        <div style="background: white; padding: 15px; border-radius: 6px; border: 1px solid var(--border);">
+        <p class="section-header">
+            📜 Professional Licenses & Certifications
+        </p>
 
-            <p>
 
-                <strong>Software:</strong>
+        <div style="
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+        ">
 
-                <span class="badge">C</span>
-                <span class="badge">C++</span>
-                <span class="badge">Python</span>
-                <span class="badge">MS Office</span>
-                <span class="badge">SolidWorks</span>
-                <span class="badge">AutoCAD</span>
-                <span class="badge">Aspen</span>
-                <span class="badge">ImageJ</span>
-                <span class="badge">Polymath</span>
-                <span class="badge">Ansys</span>
+            <p style="margin: 0;">
+
+                <strong>
+                    Registered Engineer
+                </strong>
+
+                |
+                Nepal Engineering Council
+                (06/2023)
 
             </p>
 
+        </div>
+
+
+
+        <!-- =========================
+             WORKSHOPS & TRAININGS
+        ========================== -->
+
+        <p class="section-header">
+            💡 Workshops & Trainings
+        </p>
+
+
+
+        <!-- FRAUNHOFER -->
+
+        <details open>
+
+            <summary>
+                Algae Biotechnology |
+                Fraunhofer IGB
+            </summary>
+
+
+            <div class="details-content">
+
+                <p>
+
+                    <strong>
+                        04/2025 | Stuttgart, Germany
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Advanced technical workshop covering
+                    microalgae biotechnology, cultivation systems,
+                    and downstream processing.
+
+                </p>
+
+            </div>
+
+        </details>
+
+
+
+        <!-- CLEAN COOKING -->
+
+        <details>
+
+            <summary>
+                Workshop on Clean Cooking |
+                Kathmandu University
+            </summary>
+
+
+            <div class="details-content">
+
+                <p>
+
+                    <strong>
+                        09/2022 | Dhulikhel, Nepal
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Focused on sustainable energy transitions,
+                    clean fuel alternatives, and efficient
+                    biomass utilization.
+
+                </p>
+
+            </div>
+
+        </details>
+
+
+
+        <!-- STARTUP BOOTCAMP -->
+
+        <details>
+
+            <summary>
+
+                Three Days Bootcamp on Start-up and Incubation |
+                Energize Nepal
+
+            </summary>
+
+
+            <div class="details-content">
+
+                <p>
+
+                    <strong>
+                        05/2022 | Nepal
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Intensive incubation bootcamp covering
+                    business model canvas, venture pitching,
+                    techno-economic feasibility, and
+                    commercialization pathways.
+
+                </p>
+
+            </div>
+
+        </details>
+
+
+
+        <!-- QUANTUM CHEMISTRY -->
+
+        <details>
+
+            <summary>
+
+                ab-initio Quantum Chemistry Calculations Using
+                Supercomputer |
+                Kathmandu University
+
+            </summary>
+
+
+            <div class="details-content">
+
+                <p>
+
+                    <strong>
+                        08/2020 | Dhulikhel, Nepal
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Hands-on workshop covering computational
+                    chemistry, electronic structure calculations,
+                    and High-Performance Computing (HPC) workflows.
+
+                </p>
+
+            </div>
+
+        </details>
+
+
+
+        <!-- =========================
+             ONLINE COURSES
+        ========================== -->
+
+        <p class="section-header">
+            💻 Online Courses
+        </p>
+
+
+        <div style="
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+        ">
+
+            <ul style="
+                margin: 0;
+                padding-left: 20px;
+                line-height: 1.8;
+            ">
+
+                <li>
+
+                    <strong>
+                        Becoming an Entrepreneur
+                    </strong>
+
+                    —
+                    Massachusetts Institute of Technology (MIT)
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Algae Biotechnology
+                    </strong>
+
+                    —
+                    University of California San Diego (UC San Diego)
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Introduction to Algae
+                    </strong>
+
+                    —
+                    University of California San Diego (UC San Diego)
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Solid Waste Management
+                    </strong>
+
+                    —
+                    World Bank
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Challenges of Agribusiness Management
+                    </strong>
+
+                    —
+                    Università Bocconi
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Industrial Biotechnology
+                    </strong>
+
+                    —
+                    University of Manchester
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- =========================
+             TECHNICAL SKILLS
+        ========================== -->
+
+        <p class="section-header">
+            🛠️ Technical Skills
+        </p>
+
+
+        <div style="
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+        ">
+
+
+            <!-- PROGRAMMING -->
+
             <p>
 
-                <strong>Languages:</strong>
+                <strong>
+                    Programming:
+                </strong>
+
+
+                <span class="badge">
+                    Python
+                </span>
+
+
+                <span class="badge">
+                    C
+                </span>
+
+
+                <span class="badge">
+                    C++
+                </span>
+
+            </p>
+
+
+
+            <!-- ENGINEERING SOFTWARE -->
+
+            <p>
+
+                <strong>
+                    Engineering & Simulation:
+                </strong>
+
+
+                <span class="badge">
+                    Ansys Fluent
+                </span>
+
+
+                <span class="badge">
+                    Aspen
+                </span>
+
+
+                <span class="badge">
+                    Polymath
+                </span>
+
+
+                <span class="badge">
+                    SolidWorks
+                </span>
+
+
+                <span class="badge">
+                    AutoCAD
+                </span>
+
+            </p>
+
+
+
+            <!-- DATA / ANALYSIS -->
+
+            <p>
+
+                <strong>
+                    Data & Analysis:
+                </strong>
+
+
+                <span class="badge">
+                    ImageJ
+                </span>
+
+
+                <span class="badge">
+                    MS Office
+                </span>
+
+            </p>
+
+
+
+            <!-- LANGUAGES -->
+
+            <p>
+
+                <strong>
+                    Languages:
+                </strong>
 
                 Nepali (Native),
                 English (C1),
@@ -452,15 +1067,25 @@
         </div>
 
 
-        <!-- DOWNLOAD CV -->
 
-        <div style="margin: 30px 0; text-align: center;">
+        <!-- =========================
+             DOWNLOAD CV
+        ========================== -->
+
+        <div style="
+            margin: 30px 0;
+            text-align: center;
+        ">
 
             <a
                 href="CV.pdf"
                 download
                 class="btn"
-                style="width: 80%; padding: 15px; font-size: 1.1rem;">
+                style="
+                    width: 80%;
+                    padding: 15px;
+                    font-size: 1.1rem;
+                ">
 
                 📥 Download Full Professional CV (PDF)
 
@@ -471,34 +1096,59 @@
     </div>
 
 
-    <!-- FOOTER -->
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <div class="footer">
 
+
         <span>
+
             © 2026 Krishna Kumar Karki
+
         </span>
+
+
+
+        <!-- LINKEDIN -->
 
         <a
             href="https://www.linkedin.com/in/krishna-kumar-karki/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
 
-            <span class="footer-icon in-bg">in</span>
+            <span class="footer-icon in-bg">
+                in
+            </span>
+
             LinkedIn
 
         </a>
 
+
+
+        <!-- QUORA -->
+
         <a
             href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer">
 
-            <span class="footer-icon q-bg">Q</span>
+            <span class="footer-icon q-bg">
+                Q
+            </span>
+
             Quora
 
         </a>
 
+
     </div>
 
+
 </body>
+
 </html>
 ```
