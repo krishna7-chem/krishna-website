@@ -3,16 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Krishna Karki</title>
+    <title>Contact | Krishna Kumar Karki</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .contact-card {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            border: 1px solid var(--border, #e2e8f0);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .form-card {
+            flex: 1.6;
+            min-width: 320px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border, #e2e8f0);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.92rem;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            box-sizing: border-box;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--navy, #1e3a8a);
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+        .contact-icon {
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+        .map-section {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border, #e2e8f0);
+        }
+    </style>
 </head>
 <body>
 
+    <!-- TOP NAVIGATION BAR -->
     <div class="top-bar">
         <div class="brand">
-            <img src="profile_1 (1).jpg" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'" alt="Krishna">
+            <img src="profile_1 (1).jpg"
+                 onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'"
+                 alt="Krishna">
             <h1>KRISHNA KUMAR KARKI</h1>
         </div>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="cv.html">CV</a>
@@ -22,34 +94,172 @@
         </nav>
     </div>
 
-    <div class="container" style="max-width: 600px;">
-        <h1 style="color: var(--navy);">✉️ Send Me a Message</h1>
 
-        <form action="https://formspree.io/f/karki.kris1998@gmail.com" method="POST" style="background: white; padding: 25px; border-radius: 8px; border: 1px solid var(--border);">
-            <div class="form-group">
-                <label>Name*</label>
-                <input type="text" name="name" required>
+    <div class="container">
+
+        <h1 style="color: var(--navy, #1e3a8a); margin-bottom: 5px;">
+            📬 Get in Touch
+        </h1>
+
+        <p style="color: #666; margin-top: 0; margin-bottom: 25px;">
+            Have a research proposal, engineering inquiry, or academic opportunity? Send a message directly using the form below or reach out via email.
+        </p>
+
+
+        <div class="contact-grid">
+
+            <!-- LEFT COLUMN: DIRECT CONTACT DETAILS -->
+            <div class="contact-card">
+                <h3 style="color: var(--navy, #1e3a8a); margin-top: 0; margin-bottom: 18px;">
+                    Contact Details
+                </h3>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:karki.kris1998@gmail.com" style="color: var(--navy, #1e3a8a); text-decoration: none; font-weight: 500;">
+                            karki.kris1998@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Location</strong><br>
+                        <span>Munich, Germany</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <strong>Phone / WhatsApp</strong><br>
+                        <a href="https://wa.me/4915755659606" target="_blank" style="color: var(--navy, #1e3a8a); text-decoration: none;">
+                            +49 157 5565 9606
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">💼</span>
+                    <div>
+                        <strong>Professional Profiles</strong><br>
+                        <div style="margin-top: 5px; display: flex; flex-direction: column; gap: 4px;">
+                            <a href="https://www.linkedin.com/in/krishna-kumar-karki/" target="_blank" style="color: var(--navy, #1e3a8a); text-decoration: none;">
+                                ↗ LinkedIn Profile
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Krishna-Kumar-Karki" target="_blank" style="color: var(--navy, #1e3a8a); text-decoration: none;">
+                                ↗ ResearchGate Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border, #e2e8f0); margin: 20px 0;">
+
+                <p style="font-size: 0.88rem; color: #666; margin: 0; line-height: 1.5;">
+                    💡 Typically responds within 24–48 business hours for research and engineering inquiries.
+                </p>
             </div>
-            <div class="form-group">
-                <label>Email*</label>
-                <input type="email" name="email" required>
+
+
+            <!-- RIGHT COLUMN: INTERACTIVE MESSAGE FORM -->
+            <div class="form-card">
+                <h3 style="color: var(--navy, #1e3a8a); margin-top: 0; margin-bottom: 18px;">
+                    Send a Message
+                </h3>
+
+                <form action="https://formsubmit.co/karki.kris1998@gmail.com" method="POST">
+
+                    <!-- Anti-spam & subject configurations -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Portfolio / Contact Inquiry - Krishna Karki">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="e.g., Prof. Schmidt / Dr. Smith" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email Address *</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="e.g., contact@organization.edu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topic">Subject / Topic</label>
+                        <select id="topic" name="topic" class="form-control">
+                            <option value="Research & Academic Collaboration">Research & Academic Collaboration</option>
+                            <option value="Materials / Multiphase Engineering Inquiry">Materials / Multiphase Engineering Inquiry</option>
+                            <option value="Job / Internship Opportunity">Job / Internship Opportunity</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" placeholder="Write your message or inquiry here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; padding: 12px; font-size: 1rem; cursor: pointer; border: none; font-weight: bold; border-radius: 6px;">
+                        ✉️ Send Message
+                    </button>
+
+                </form>
             </div>
-            <div class="form-group">
-                <label>Subject*</label>
-                <input type="text" name="subject" required>
-            </div>
-            <div class="form-group">
-                <label>Message*</label>
-                <textarea name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn" style="width: 100%;">Submit Message</button>
-        </form>
+
+        </div>
+
+
+        <!-- GOOGLE MAPS EMBED (MUNICH, GERMANY) -->
+        <div class="map-section">
+            <h3 style="color: var(--navy, #1e3a8a); margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                📍 Current Location: Munich, Germany
+            </h3>
+            <iframe 
+                width="100%" 
+                height="350" 
+                style="border: 0; border-radius: 6px;" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=Munich,%20Germany&t=&z=12&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+
     </div>
 
+
+    <!-- UNIVERSAL FOOTER -->
     <div class="footer">
-        <span>© 2026 Krishna Kumar Karki</span>
-        <a href="https://www.linkedin.com/in/krishna-kumar-karki/" target="_blank"><span class="footer-icon in-bg">in</span> LinkedIn</a>
-        <a href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers" target="_blank"><span class="footer-icon q-bg">Q</span> Quora</a>
+        <div class="footer-info">
+            <strong>Krishna Kumar Karki</strong>
+            <span>•</span>
+            <a href="mailto:karki.kris1998@gmail.com">📧 karki.kris1998@gmail.com</a>
+            <span>•</span>
+            <span>📍 Munich, Germany</span>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/krishna-kumar-karki/" target="_blank" rel="noopener noreferrer">
+                <span class="footer-icon in-bg">in</span> LinkedIn
+            </a>
+
+            <a href="https://www.researchgate.net/profile/Krishna-Kumar-Karki" target="_blank" rel="noopener noreferrer">
+                <span class="footer-icon rg-bg">RG</span> ResearchGate
+            </a>
+
+            <a href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers" target="_blank" rel="noopener noreferrer">
+                <span class="footer-icon q-bg">Q</span> Quora
+            </a>
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Krishna Kumar Karki. All rights reserved.
+        </div>
     </div>
+
 </body>
 </html>
