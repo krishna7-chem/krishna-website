@@ -6,7 +6,6 @@
     <title>Contact | Krishna Kumar Karki</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Leaflet.js for Interactive Maps -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -236,7 +235,7 @@
             box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
         }
 
-        /* Interactive Map Section */
+        /* Location Map Section */
         .map-wrapper {
             background: #ffffff;
             border: 1px solid var(--border);
@@ -247,35 +246,7 @@
         }
 
         .map-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
             margin-bottom: 14px;
-        }
-
-        .map-tabs {
-            display: flex;
-            gap: 6px;
-        }
-
-        .map-tab-btn {
-            background: #f1f5f9;
-            border: 1px solid var(--border);
-            padding: 5px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--text-muted);
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
-
-        .map-tab-btn.active, .map-tab-btn:hover {
-            background: var(--navy);
-            color: #ffffff;
-            border-color: var(--navy);
         }
 
         #interactive-map {
@@ -289,7 +260,6 @@
 </head>
 <body>
 
-    <!-- TOP NAVIGATION BAR -->
     <div class="top-bar">
         <div class="brand">
             <img src="profile_1 (1).jpg"
@@ -310,7 +280,6 @@
 
     <div class="container">
 
-        <!-- HEADER BANNER -->
         <div class="contact-header">
             <div class="status-pill">
                 <span class="status-dot"></span>
@@ -327,13 +296,11 @@
 
         <div class="contact-layout">
 
-            <!-- LEFT COLUMN: DIRECT CONTACT & SOCIAL PROFILES -->
             <div class="glass-card">
                 <h3 style="color: var(--primary); margin: 0 0 20px 0; font-size: 1.15rem;">
                     Contact Information
                 </h3>
 
-                <!-- EMAIL WITH 1-CLICK COPY -->
                 <div class="contact-channel">
                     <div class="channel-icon">📧</div>
                     <div class="channel-content">
@@ -345,17 +312,15 @@
                     </div>
                 </div>
 
-                <!-- LOCATION: FELDKIRCHEN, MUNICH -->
                 <div class="contact-channel">
                     <div class="channel-icon">📍</div>
                     <div class="channel-content">
                         <h4>Current Base</h4>
                         <p>Feldkirchen (Munich), Germany</p>
-                        <span style="font-size: 0.8rem; color: var(--text-muted);">Technical University of Munich (TUM) Area</span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Bavaria, Germany</span>
                     </div>
                 </div>
 
-                <!-- PHONE / WHATSAPP -->
                 <div class="contact-channel">
                     <div class="channel-icon">📱</div>
                     <div class="channel-content">
@@ -364,33 +329,32 @@
                     </div>
                 </div>
 
-                <!-- SOCIAL BADGES (ICON-ONLY WITH HOVER EFFECT) -->
                 <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border);">
                     <h4 style="font-size: 0.82rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; letter-spacing: 0.5px;">
                         Professional Profiles
                     </h4>
                     <div style="display: flex; gap: 10px;">
-                        <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/krishna-karki/" 
                            target="_blank" 
+                           rel="noopener noreferrer"
                            class="social-icon-btn in" 
                            title="LinkedIn" 
                            aria-label="LinkedIn">
                             <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.57 1.57 0 1 0 0 3.14 1.57 1.57 0 0 0 0-3.14z"/></svg>
                         </a>
 
-                        <!-- ResearchGate -->
                         <a href="https://www.researchgate.net/profile/Krishna-Karki-7" 
                            target="_blank" 
+                           rel="noopener noreferrer"
                            class="social-icon-btn rg" 
                            title="ResearchGate" 
                            aria-label="ResearchGate">
                             <svg viewBox="0 0 24 24"><path d="M19.58 2.42H4.42C3.3 2.42 2.42 3.3 2.42 4.42v15.16c0 1.12.88 2 2 2h15.16c1.12 0 2-.88 2-2V4.42c0-1.12-.88-2-2-2zM9.08 17.58H6.75V6.42h3.58c2.42 0 3.83 1.33 3.83 3.33 0 1.67-.92 2.75-2.25 3.17l2.67 4.66h-2.67l-2.33-4.25h-.5v4.25zm0-6.17h1.08c1.08 0 1.67-.58 1.67-1.42 0-.83-.59-1.42-1.67-1.42H9.08v2.84zm7.92 6.17c-2.33 0-3.92-1.67-3.92-4.17s1.59-4.17 3.92-4.17c1.33 0 2.33.58 3 1.5l-1.58 1.17c-.33-.5-.75-.83-1.42-.83-1.08 0-1.83.83-1.83 2.33s.75 2.33 1.83 2.33c.67 0 1.08-.33 1.42-.83l1.58 1.17c-.67.92-1.67 1.5-3 1.5z"/></svg>
                         </a>
 
-                        <!-- Quora -->
                         <a href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers" 
                            target="_blank" 
+                           rel="noopener noreferrer"
                            class="social-icon-btn quora" 
                            title="Quora" 
                            aria-label="Quora">
@@ -401,13 +365,11 @@
             </div>
 
 
-            <!-- RIGHT COLUMN: INTERACTIVE MESSAGE FORM -->
             <div class="glass-card">
                 <h3 style="color: var(--primary); margin: 0 0 12px 0; font-size: 1.15rem;">
                     Send a Direct Message
                 </h3>
                 
-                <!-- Quick Topic Selector -->
                 <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 8px;">Select Topic of Interest:</p>
                 <div class="topic-pills">
                     <span class="topic-pill" onclick="selectTopic(this, 'Materials Science & Characterization')">🔬 Materials Science</span>
@@ -457,30 +419,14 @@
         </div>
 
 
-        <!-- INTERACTIVE LOCATION MAP WITH MOBILITY SWITCHER -->
         <div class="map-wrapper">
             <div class="map-header">
-                <div>
-                    <h3 style="color: var(--primary); margin: 0; font-size: 1.15rem;">
-                        📍 Location & Academic Mobility Network
-                    </h3>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; margin: 4px 0 0 0;">
-                        Click location buttons to navigate across research centers in Germany, Italy, and France.
-                    </p>
-                </div>
-
-                <!-- Interactive Region Switcher -->
-                <div class="map-tabs">
-                    <button type="button" class="map-tab-btn active" onclick="focusMap(48.1483, 11.7314, 13, '<b>Feldkirchen (Munich), Germany</b><br>Technical University of Munich (TUM) Area')">
-                        Feldkirchen (Munich) 🇩🇪
-                    </button>
-                    <button type="button" class="map-tab-btn" onclick="focusMap(45.0624, 7.6622, 13, '<b>Turin, Italy</b><br>Politecnico di Torino')">
-                        Turin 🇮🇹
-                    </button>
-                    <button type="button" class="map-tab-btn" onclick="focusMap(45.4397, 4.3872, 13, '<b>Saint-Étienne, France</b><br>École des Mines de Saint-Étienne')">
-                        Saint-Étienne 🇫🇷
-                    </button>
-                </div>
+                <h3 style="color: var(--primary); margin: 0; font-size: 1.15rem;">
+                    📍 Location: Feldkirchen (Munich), Germany
+                </h3>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin: 4px 0 0 0;">
+                    Current residential area and engineering base.
+                </p>
             </div>
 
             <div id="interactive-map"></div>
@@ -489,7 +435,6 @@
     </div>
 
 
-    <!-- UNIVERSAL FOOTER (ICON ONLY) -->
     <div class="footer">
         <div class="footer-info">
             <strong>Krishna Kumar Karki</strong>
@@ -500,18 +445,15 @@
         </div>
 
         <div class="footer-socials">
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/krishna-karki/" target="_blank" class="social-icon-btn in" title="LinkedIn" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/krishna-karki/" target="_blank" rel="noopener noreferrer" class="social-icon-btn in" title="LinkedIn" aria-label="LinkedIn">
                 <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.57 1.57 0 1 0 0 3.14 1.57 1.57 0 0 0 0-3.14z"/></svg>
             </a>
 
-            <!-- ResearchGate -->
-            <a href="https://www.researchgate.net/profile/Krishna-Karki-7" target="_blank" class="social-icon-btn rg" title="ResearchGate" aria-label="ResearchGate">
+            <a href="https://www.researchgate.net/profile/Krishna-Karki-7" target="_blank" rel="noopener noreferrer" class="social-icon-btn rg" title="ResearchGate" aria-label="ResearchGate">
                 <svg viewBox="0 0 24 24"><path d="M19.58 2.42H4.42C3.3 2.42 2.42 3.3 2.42 4.42v15.16c0 1.12.88 2 2 2h15.16c1.12 0 2-.88 2-2V4.42c0-1.12-.88-2-2-2zM9.08 17.58H6.75V6.42h3.58c2.42 0 3.83 1.33 3.83 3.33 0 1.67-.92 2.75-2.25 3.17l2.67 4.66h-2.67l-2.33-4.25h-.5v4.25zm0-6.17h1.08c1.08 0 1.67-.58 1.67-1.42 0-.83-.59-1.42-1.67-1.42H9.08v2.84zm7.92 6.17c-2.33 0-3.92-1.67-3.92-4.17s1.59-4.17 3.92-4.17c1.33 0 2.33.58 3 1.5l-1.58 1.17c-.33-.5-.75-.83-1.42-.83-1.08 0-1.83.83-1.83 2.33s.75 2.33 1.83 2.33c.67 0 1.08-.33 1.42-.83l1.58 1.17c-.67.92-1.67 1.5-3 1.5z"/></svg>
             </a>
 
-            <!-- Quora -->
-            <a href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers" target="_blank" class="social-icon-btn quora" title="Quora" aria-label="Quora">
+            <a href="https://www.quora.com/profile/Krishna-Kumar-Karki-1/answers" target="_blank" rel="noopener noreferrer" class="social-icon-btn quora" title="Quora" aria-label="Quora">
                 <svg viewBox="0 0 24 24"><path d="M12.07 2C6.54 2 2.06 6.48 2.06 12s4.48 10 10.01 10c1.78 0 3.44-.47 4.9-1.28l3.18 1.06-.8-3.11c1.68-1.78 2.73-4.11 2.73-6.67 0-5.52-4.48-10-10.01-10zm.04 17.2c-3.98 0-7.2-3.23-7.2-7.2s3.22-7.2 7.2-7.2 7.2 3.23 7.2 7.2c0 1.93-.76 3.69-2 4.99v1.65l-1.61-.54c-1.04.7-2.28 1.1-3.59 1.1z"/></svg>
             </a>
         </div>
@@ -522,7 +464,6 @@
     </div>
 
 
-    <!-- JAVASCRIPT: MAP INITIALIZATION & INTERACTIVE UTILITIES -->
     <script>
         // 1. One-Click Copy Functionality
         function copyEmail() {
@@ -552,13 +493,12 @@
             document.getElementById('email-subject-field').value = "Contact Inquiry: " + val + " - Krishna Karki";
         }
 
-        // 3. Leaflet.js Interactive Map (Centered on Feldkirchen, Munich)
-        let map;
-        let activeMarker;
-
+        // 3. Leaflet.js Interactive Map (Locked to Feldkirchen, Munich)
         document.addEventListener("DOMContentLoaded", function() {
             // Precise coordinates for Feldkirchen bei München: [48.1483, 11.7314]
-            map = L.map('interactive-map').setView([48.1483, 11.7314], 13);
+            const map = L.map('interactive-map', {
+                scrollWheelZoom: false // Prevents accidental page scroll trapping
+            }).setView([48.1483, 11.7314], 13);
 
             // Clean OpenStreetMap Tile Layer
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -566,29 +506,12 @@
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
 
-            // Default marker for Feldkirchen
-            activeMarker = L.marker([48.1483, 11.7314])
+            // Single location marker
+            L.marker([48.1483, 11.7314])
                 .addTo(map)
-                .bindPopup("<b>Feldkirchen (Munich), Germany</b><br>Technical University of Munich (TUM) Area")
+                .bindPopup("<b>Feldkirchen (Munich), Germany</b><br>Bavaria, Germany")
                 .openPopup();
         });
-
-        // Function to smoothly fly to selected academic mobility center
-        function focusMap(lat, lng, zoom, popupText) {
-            document.querySelectorAll('.map-tab-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            map.flyTo([lat, lng], zoom, {
-                animate: true,
-                duration: 1.2
-            });
-
-            if (activeMarker) map.removeLayer(activeMarker);
-            activeMarker = L.marker([lat, lng])
-                .addTo(map)
-                .bindPopup(popupText)
-                .openPopup();
-        }
     </script>
 
 </body>
