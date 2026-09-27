@@ -19,7 +19,7 @@ st.caption("Last Updated: April 2, 2026") # [cite: 127]
 st.markdown('<p class="section-header">👤 Personal Information</p>', unsafe_allow_html=True)
 st.write("**Name:** Krishna Kumar Karki") # [cite: 91]
 st.write("**Date of Birth:** 20/12/1998") # [cite: 92]
-st.write("**Address:** Via Bernardino Galliari 30, 10125 Turin, Italy") # [cite: 93]
+st.write("**Address:** Rübezahlstraße 6, 85622 Feldkirchen") # [cite: 93]
 st.write("**Phone:** +4915755659606 | **Email:** karki.kris1998@gmail.com") # [cite: 94, 95]
 st.write("**LinkedIn:** [linkedin.com/in/krishna-kumar-karki/](https://www.linkedin.com/in/krishna-kumar-karki/)") # [cite: 96]
 
